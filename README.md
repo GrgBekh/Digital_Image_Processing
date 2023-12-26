@@ -6,20 +6,29 @@
 Классы:
 
 Цель - найти разливы среди обычных изображениий, достичь метрик:
+
 TPR, TNR >= 0.91
 
 Эксперимент:
+
 Архитектура - U-Net autoencoder
+
 Loss - MSE
+
 Оптимизатор - AdamW
+
 lr - 0.0003
+
 Число эпох - 25
+
 Threshold для классификации - минимум MSE для проливов после обучения
 
 Аугментации:
 
 RandomVerticalFlip()
+
 RandomHorizontalFlip()
+
 RandomRotation(5)
 
 
@@ -27,6 +36,7 @@ RandomRotation(5)
 Результаты:
 
 TPR = 0.96
+
 TNR = 0.92
 
 
